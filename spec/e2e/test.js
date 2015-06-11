@@ -8,7 +8,12 @@ describe('User can login', function() {
     expect(browser.getTitle()).toEqual('Makers FM');
   });
 
-  xit('with correct details', function() {
+  it('has a link to the spotify login form', function () {
+    var login = element(by.id('login'))
+    expect(login.getText()).toEqual('Log in with Spotify')
+  })
+
+  it('with correct email and password', function() {
 
   });
 });

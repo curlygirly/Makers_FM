@@ -1,5 +1,3 @@
-// var makersFM = angular.module('MakersFM', ['ngResource']);
-
 /**
  * This is an example of a basic node.js script that performs
  * the Authorization Code oAuth2 flow to authenticate against
@@ -41,7 +39,6 @@ app.use(express.static(__dirname + '/public'))
    .use(cookieParser());
 
 app.get('/login', function(req, res) {
-  console.log("Are you listening?")
 
   var state = generateRandomString(16);
   res.cookie(stateKey, state);
