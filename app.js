@@ -1,0 +1,1 @@
+var makersFM = angular.module('MakersFM', ['ngResource']);
